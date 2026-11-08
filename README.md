@@ -1,19 +1,36 @@
-This directory includes a few sample datasets to get you started.
+# Rania Derouich — Personal Portfolio
 
-*   `california_housing_data*.csv` is California housing data from the 1990 US
-    Census; more information is available at:
-    https://docs.google.com/document/d/e/2PACX-1vRhYtsvc5eOR2FWNCwaBiKL6suIOrxJig8LcSBbmCbyYsayia_DvPOOBlXZ4CAlQ5nlDD8kTaIDRwrN/pub
+Personal portfolio website, hosted via [GitHub Pages](https://pages.github.com/) at **[rania-derouich.github.io](https://rania-derouich.github.io/)**.
 
-*   `mnist_*.csv` is a small sample of the
-    [MNIST database](https://en.wikipedia.org/wiki/MNIST_database), which is
-    described at: http://yann.lecun.com/exdb/mnist/
+## About
 
-*   `anscombe.json` contains a copy of
-    [Anscombe's quartet](https://en.wikipedia.org/wiki/Anscombe%27s_quartet); it
-    was originally described in
+This site presents my background, experience, and projects as a bioinformatician working at the intersection of machine learning, genomics, drug discovery, and quantum computing.
 
-    Anscombe, F. J. (1973). 'Graphs in Statistical Analysis'. American
-    Statistician. 27 (1): 17-21. JSTOR 2682899.
+**Sections:**
+- About
+- Professional Experience (AREMA International, Genoflow, RIADI Laboratory, Institut Pasteur de Tunis, and earlier internships)
+- Technical Skills
+- Projects (linked to my [GitHub repositories](https://github.com/rania-derouich))
+- Publications & Preprints
+- Talks & Training
+- Contact
 
-    and our copy was prepared by the
-    [vega_datasets library](https://github.com/altair-viz/vega_datasets/blob/4f67bdaad10f45e3549984e17e1b3088c731503d/vega_datasets/_data/anscombe.json).
+## Structure
+
+```
+rania-derouich.github.io/
+├── index.html                  # Home page
+├── portfolio.html              # Full portfolio page
+└── assets/
+    └── Rania_Derouich_CV.pdf   # CV linked from the "Download CV" buttons
+```
+
+Both pages are static HTML/CSS — no build step required. Edit the `.html` files directly and push to `main`; GitHub Pages redeploys automatically.
+
+## Contact
+
+- Email: derouichrania38@gmail.com | rania.derouich@ensi-uma.tn 
+- [LinkedIn](https://linkedin.com/in/rania-derouich-29049022a)
+- [GitHub](https://github.com/rania-derouich)
+- [ORCID](https://orcid.org/0009-0009-6157-2647)
+- [ResearchGate](https://www.researchgate.net/profile/Rania-Derouich)
