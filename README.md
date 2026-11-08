@@ -19,9 +19,8 @@ This site presents my background, experience, and projects as a bioinformatician
 
 ```
 rania-derouich.github.io/
-├── index.html                  # Home page
-├── portfolio.html              # Full portfolio page
-
+├── index.html        # Home page
+└── portfolio.html    # Full portfolio page
 ```
 
 Both pages are static HTML/CSS — no build step required. Edit the `.html` files directly and push to `main`; GitHub Pages redeploys automatically.
