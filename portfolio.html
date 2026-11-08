@@ -97,7 +97,7 @@ h2.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw
 .stag{font-family:'DM Mono',monospace;font-size:10px;padding:3px 9px;border-radius:2px;border:1px solid var(--border);color:var(--muted2);background:rgba(255,255,255,.03)}
 .projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem}
 .project-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.75rem;transition:all .25s;text-decoration:none;color:inherit;display:block}
-.project-card:hover{border-color:var(--border2);transform:translateY(-3px);background:var(--surface2)}
+.project-card:hover{border-color:var(--border2);background:var(--surface2)}
 .project-card-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1rem}
 .project-badge{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:3px}
 .bdl{background:rgba(124,109,250,.1);color:#a89ff7;border:1px solid rgba(124,109,250,.2)}
@@ -131,6 +131,17 @@ footer p{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted)}
 @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:900px){.about-grid{grid-template-columns:1fr}.skills-mega{grid-template-columns:repeat(2,1fr)}.projects-grid{grid-template-columns:1fr}}
 @media(max-width:640px){nav{padding:1rem 1.5rem}.nav-links,.nav-cta{display:none}.hero{padding:6.5rem 1.5rem 3rem}section{padding:3.5rem 1.5rem}.skills-mega{grid-template-columns:1fr}.contact-inner{padding:2.5rem 1.5rem}footer{padding:1.5rem;flex-direction:column;gap:.5rem;text-align:center}}
+.hero-intro{font-size:15px;color:var(--muted2);max-width:680px;line-height:1.8;margin-bottom:2.5rem}
+.proj-rows{margin:0 0 1.25rem}
+.proj-row{display:grid;grid-template-columns:78px 1fr;gap:.75rem;padding:.55rem 0;border-top:1px solid var(--border);font-size:12.5px;line-height:1.65}
+.proj-row:first-child{border-top:none}
+.proj-label{font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);padding-top:3px}
+.proj-row p{color:var(--muted2)}
+.proj-link{display:inline-block;margin-top:1.1rem;font-family:'DM Mono',monospace;font-size:11px;color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(74,255,180,.3)}
+.proj-link:hover{border-bottom-color:var(--accent)}
+.project-card{display:flex;flex-direction:column}
+.project-card .project-stack{margin-top:auto}
+.bml{background:rgba(74,255,180,.1);color:var(--accent);border:1px solid rgba(74,255,180,.2)}
 </style>
 </head>
 <body>
@@ -148,8 +159,9 @@ footer p{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted)}
 <div class="hero">
   <div class="hero-eyebrow">Bioinformatician · Tunis, Tunisia</div>
   <h1 class="hero-name">Rania<br><em>Derouich</em></h1>
-  <p class="hero-role">Bioinformatician — Machine Learning · Genomics · Drug Discovery · Quantum Computing</p>
-  <p class="hero-thesis">Master's thesis: <span>Quantum machine learning for drug response prediction</span> — RIADI Laboratory</p>
+  <p class="hero-role">Bioinformatician | Computational Biology &amp; AI</p>
+  <p class="hero-thesis">Genomics · Pharmacogenomics · Drug Discovery · Quantum Machine Learning</p>
+  <p class="hero-intro">I develop computational approaches combining bioinformatics, machine learning and quantum computing to address challenges in genomics, pharmacogenomics and drug discovery.</p>
   <div class="hero-pills">
     <span class="pill pg">Python</span><span class="pill pg">R</span>
     <span class="pill pp">Machine Learning</span><span class="pill pp">Quantum ML</span>
@@ -167,10 +179,11 @@ footer p{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted)}
   <div class="section-header"><span class="section-num">01</span><h2 class="section-title">About</h2><div class="section-line"></div></div>
   <div class="about-grid">
     <div class="about-text">
-      <p>I'm a <strong>bioinformatician</strong> with an MSc in Bioinformatics (Bio Data Analytics, ISBST · Institut Pasteur de Tunis · ENSI Manouba), with expertise in computational biology, machine learning and biomedical data analysis.</p>
+      <p>I am a <strong>bioinformatician</strong> with an MSc in Bioinformatics and a strong interest in computational biology, artificial intelligence and data-driven biomedical research.</p>
       <div class="about-quote">"In my thesis work, hybrid quantum-classical models came within ΔR² = 0.025 of the classical baseline on 130,776 samples, while amplitude-encoded models used up to 75% less memory."</div>
-      <p>I apply AI and bioinformatics approaches to <strong>cancer genomics, pharmacogenomics and drug response prediction</strong>, from benchmarking quantum encodings on a 20-qubit superconducting QPU to genomic analysis, molecular docking and in-silico drug repurposing.</p>
-      <p>I also bring experience in <strong>regulatory intelligence and scientific communication</strong>: automated monitoring of regulatory and standards publications, and talks on AI and plant omics.</p>
+      <p>My work focuses on applying <strong>machine learning, deep learning and bioinformatics</strong> approaches to cancer genomics, pharmacogenomics and drug response prediction. I have also explored quantum machine learning through benchmarking studies on simulated environments and a 20-qubit superconducting quantum processing unit.</p>
+      <p>Beyond research, I have experience in genomic data analysis, molecular modeling, regulatory intelligence and scientific communication.</p>
+      <p>I am particularly interested in research and industry opportunities involving <strong>AI-driven drug discovery, precision medicine, computational genomics</strong> and emerging quantum technologies.</p>
     </div>
     <div class="about-sidebar">
       <div class="stat-box"><div class="stat-num">3</div><div><div class="stat-label">bioRxiv preprints</div><div class="stat-sub">Quantum ML · Plant genomics · Metagenomics</div></div></div>
@@ -228,13 +241,13 @@ footer p{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted)}
     <div class="exp-item">
       <div class="exp-header"><div class="exp-title">Bioinformatics Internship — Genomics &amp; Oncogenetics</div><span class="exp-date">Aug – Sep 2024</span></div>
       <div class="exp-org">Institut Pasteur de Tunis</div>
-      <ul class="exp-bullets"><li>Cancer-related genomic mutation analysis and interactive gene-expression visualizations in R.</li></ul>
+      <ul class="exp-bullets"><li>Analysis of cancer-related genomic mutations with variant annotation pipelines.</li><li>Interactive gene-expression visualizations in R using ggplot2, Shiny and Bioconductor.</li></ul>
     </div>
 
     <div class="exp-item">
       <div class="exp-header"><div class="exp-title">Genomics Internship — Nanopore Sequencing</div><span class="exp-date">Jun 2024</span></div>
       <div class="exp-org">Faculty of Sciences of Tunis</div>
-      <ul class="exp-bullets"><li>MERS-CoV whole-genome sequencing with Oxford Nanopore technology and the associated bioinformatics pipeline.</li></ul>
+      <ul class="exp-bullets"><li>Whole-genome sequencing of MERS-CoV with Oxford Nanopore technology.</li><li>Bioinformatics pipeline: basecalling, de novo assembly and quality control.</li></ul>
       <div class="exp-result"><span class="exp-result-label">Result</span><p>Tunisian genomic data integrated into international surveillance databases.</p></div>
     </div>
 
@@ -273,42 +286,55 @@ footer p{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted)}
 <section id="projects">
   <div class="section-header"><span class="section-num">04</span><h2 class="section-title">Projects</h2><div class="section-line"></div></div>
   <div class="projects-grid">
-    <a href="https://github.com/rania-derouich/quantum-encoding-ic50-benchmark" target="_blank" rel="noopener" class="project-card">
-      <div class="project-card-top"><span class="project-badge bq">Quantum + ML</span><span class="project-arrow">↗</span></div>
+    <div class="project-card">
+      <div class="project-card-top"><span class="project-badge bq">Quantum + ML</span></div>
       <h3 class="project-title">Hybrid Quantum-Classical ML for IC50 Prediction</h3>
-      <p class="project-desc">Benchmarked three quantum encodings (angle, amplitude, hybrid) in simulation against classical regressors, with COBYLA proxy optimization, Differential Evolution, and computational time and memory analyses.</p>
+      <div class="proj-rows"><div class="proj-row"><span class="proj-label">Problem</span><p>Can hybrid quantum-classical regressors predict drug response (IC50) as accurately as classical models, and at what computational cost?</p></div><div class="proj-row"><span class="proj-label">Data</span><p>GDSC (13,106 samples) and Anchor Combination (130,776 samples).</p></div><div class="proj-row"><span class="proj-label">Method</span><p>Three quantum encodings (angle, amplitude, hybrid) simulated in PennyLane and compared with classical regressors, with COBYLA proxy optimization and Differential Evolution.</p></div><div class="proj-row"><span class="proj-label">Results</span><p>R² = 0.8636 for a hybrid Random Forest on a 5,000-sample Anchor Combination proxy (ΔR² = 0.025 vs. the classical baseline, R² = 0.8882); amplitude-encoded hybrid MLP used up to 75% less memory.</p></div></div>
       <div class="project-stack"><span class="ptag">Python</span><span class="ptag">PennyLane</span></div>
-    </a>
-    <a href="https://github.com/rania-derouich/quantum-encoding-ic50-qpu" target="_blank" rel="noopener" class="project-card">
-      <div class="project-card-top"><span class="project-badge bq">Quantum Hardware</span><span class="project-arrow">↗</span></div>
+      <a class="proj-link" href="https://github.com/rania-derouich/quantum-encoding-ic50-benchmark" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+    <div class="project-card">
+      <div class="project-card-top"><span class="project-badge bq">Quantum Hardware</span></div>
       <h3 class="project-title">Quantum Encoding Benchmark on a 20-Qubit QPU</h3>
-      <p class="project-desc">Benchmarked 12 quantum data-encoding strategies for drug response (IC50) prediction on the IQM Garnet 20-qubit superconducting QPU, using Qrisp on GDSC2. Code, notebooks and experimental results released.</p>
+      <div class="proj-rows"><div class="proj-row"><span class="proj-label">Problem</span><p>How do quantum data-encoding strategies behave for IC50 prediction on real quantum hardware?</p></div><div class="proj-row"><span class="proj-label">Data</span><p>GDSC2.</p></div><div class="proj-row"><span class="proj-label">Method</span><p>12 encoding strategies run on the IQM Garnet 20-qubit superconducting QPU using Qrisp.</p></div><div class="proj-row"><span class="proj-label">Results</span><p>First hardware-executed benchmark of twelve encodings; a QAOA-inspired encoding performed best. Published as a bioRxiv preprint with code, notebooks and results.</p></div></div>
       <div class="project-stack"><span class="ptag">Python</span><span class="ptag">Qrisp</span><span class="ptag">IQM</span></div>
-    </a>
-    <a href="https://github.com/rania-derouich/dermaai-ph2" target="_blank" rel="noopener" class="project-card">
-      <div class="project-card-top"><span class="project-badge bdl">Deep Learning</span><span class="project-arrow">↗</span></div>
+      <a class="proj-link" href="https://github.com/rania-derouich/quantum-encoding-ic50-qpu" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+    <div class="project-card">
+      <div class="project-card-top"><span class="project-badge bml">Machine Learning</span></div>
+      <h3 class="project-title">Breast Cancer Classification — Classical ML</h3>
+      <div class="proj-rows"><div class="proj-row"><span class="proj-label">Problem</span><p>Classify breast tumours as benign or malignant.</p></div><div class="proj-row"><span class="proj-label">Data</span><p>Wisconsin breast cancer dataset.</p></div><div class="proj-row"><span class="proj-label">Method</span><p>Random Forest, Gradient Boosting and a Neural Network, combined by ensemble voting.</p></div></div>
+      <div class="project-stack"><span class="ptag">scikit-learn</span><span class="ptag">TensorFlow</span><span class="ptag">Keras</span></div>
+      <a class="proj-link" href="https://github.com/rania-derouich/breast-cancer-ml-classification" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+    <div class="project-card">
+      <div class="project-card-top"><span class="project-badge bdl">Deep Learning</span></div>
       <h3 class="project-title">DermaAI — Skin Lesion Classification</h3>
-      <p class="project-desc">Hybrid CNN (MobileNetV2 + VGG16) coupled with Random Forest for dermoscopic lesion classification on the PH2 dataset, using transfer learning for early melanoma detection.</p>
+      <div class="proj-rows"><div class="proj-row"><span class="proj-label">Problem</span><p>Early detection of melanoma from dermoscopic images.</p></div><div class="proj-row"><span class="proj-label">Data</span><p>PH2 dermoscopic image dataset.</p></div><div class="proj-row"><span class="proj-label">Method</span><p>Hybrid CNN (MobileNetV2 + VGG16) with transfer learning, coupled with a Random Forest classifier.</p></div></div>
       <div class="project-stack"><span class="ptag">MobileNetV2</span><span class="ptag">VGG16</span><span class="ptag">Random Forest</span></div>
-    </a>
-    <a href="https://github.com/rania-derouich/homology-modeling-alpha-amylase" target="_blank" rel="noopener" class="project-card">
-      <div class="project-card-top"><span class="project-badge bst">Structural Biology</span><span class="project-arrow">↗</span></div>
+      <a class="proj-link" href="https://github.com/rania-derouich/dermaai-ph2" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+    <div class="project-card">
+      <div class="project-card-top"><span class="project-badge bst">Structural Biology</span></div>
       <h3 class="project-title">Homology Modeling — α-Amylase</h3>
-      <p class="project-desc">3D structure prediction of alpha-amylase by homology modeling, with model validation, stereochemical quality assessment and active site identification.</p>
-      <div class="project-stack"><span class="ptag">Modeller</span><span class="ptag">PyMOL</span><span class="ptag">BLAST</span></div>
-    </a>
-    <a href="https://github.com/rania-derouich/molecular-docking-vina" target="_blank" rel="noopener" class="project-card">
-      <div class="project-card-top"><span class="project-badge bmo">In-silico Drug Design</span><span class="project-arrow">↗</span></div>
+      <div class="proj-rows"><div class="proj-row"><span class="proj-label">Problem</span><p>Predict the 3D structure of α-amylase from <em>P. haloplanktis</em>, an Antarctic bacterium.</p></div><div class="proj-row"><span class="proj-label">Method</span><p>Comparative structural modeling with MODELLER, PyMOL, SWISS-MODEL and ProSA, from template search to quality validation.</p></div><div class="proj-row"><span class="proj-label">Results</span><p>Validated 3D model (RMSD 0.728 Å).</p></div></div>
+      <div class="project-stack"><span class="ptag">MODELLER</span><span class="ptag">PyMOL</span><span class="ptag">SWISS-MODEL</span><span class="ptag">ProSA</span></div>
+      <a class="proj-link" href="https://github.com/rania-derouich/homology-modeling-alpha-amylase" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+    <div class="project-card">
+      <div class="project-card-top"><span class="project-badge bmo">In-silico Drug Design</span></div>
       <h3 class="project-title">Molecular Docking — AutoDock Vina</h3>
-      <p class="project-desc">Protein–ligand docking pipeline to predict binding interactions and affinity scores, identifying candidates through computational screening for repurposing workflows.</p>
-      <div class="project-stack"><span class="ptag">AutoDock Vina</span><span class="ptag">PyMOL</span></div>
-    </a>
-    <a href="https://github.com/rania-derouich/molecular-dynamics-analysis" target="_blank" rel="noopener" class="project-card">
-      <div class="project-card-top"><span class="project-badge bmo">Molecular Dynamics</span><span class="project-arrow">↗</span></div>
+      <div class="proj-rows"><div class="proj-row"><span class="proj-label">Problem</span><p>Predict how the flavonoids kaempferol and myricetin bind to a target receptor.</p></div><div class="proj-row"><span class="proj-label">Method</span><p>Molecular docking with AutoDock Vina, scripted in Bash and visualized in PyMOL.</p></div><div class="proj-row"><span class="proj-label">Results</span><p>Binding affinities and protein–ligand interactions for both flavonoids.</p></div></div>
+      <div class="project-stack"><span class="ptag">AutoDock Vina</span><span class="ptag">PyMOL</span><span class="ptag">Bash</span></div>
+      <a class="proj-link" href="https://github.com/rania-derouich/molecular-docking-vina" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+    <div class="project-card">
+      <div class="project-card-top"><span class="project-badge bmo">Molecular Dynamics</span></div>
       <h3 class="project-title">Molecular Dynamics Analysis</h3>
-      <p class="project-desc">Simulation of biomolecular systems to study structural stability and conformational changes, with RMSD, RMSF and radius of gyration analyses.</p>
-      <div class="project-stack"><span class="ptag">GROMACS</span><span class="ptag">MDAnalysis</span><span class="ptag">Python</span></div>
-    </a>
+      <div class="proj-rows"><div class="proj-row"><span class="proj-label">Problem</span><p>Study the structural stability and conformational changes of biomolecular systems over time.</p></div><div class="proj-row"><span class="proj-label">Method</span><p>Trajectory analysis of biomolecular simulations (AMBER) with pytraj, NumPy and Matplotlib.</p></div><div class="proj-row"><span class="proj-label">Results</span><p>RMSD, RMSF, radius of gyration, PCA and thermodynamic properties.</p></div></div>
+      <div class="project-stack"><span class="ptag">AMBER</span><span class="ptag">pytraj</span><span class="ptag">NumPy</span><span class="ptag">Matplotlib</span></div>
+      <a class="proj-link" href="https://github.com/rania-derouich/molecular-dynamics-analysis" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
   </div>
 </section>
 <div class="sep"></div>
